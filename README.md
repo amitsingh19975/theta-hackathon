@@ -23,10 +23,11 @@ Follow the instruction on the [here](https://docs.thetatoken.org/docs/setup) pro
 1. Open a terminal
 2. Clone the repo using `git clone` in your chosen directory.
 3. `cd` into the cloned directory.
-4. run `npm install`. It will install all the dependencies.
-5. Before running on any new machine, run the `npm run resetDB` command. The reason is simple, I'm running firebase, which is global and visible to every machine, but EdgeStore and Theta blockchain are not. The filesystem that is saved on firebase is global, and the filesystem also has the contract address with the EdgeStore address that may exist on the other machine or not. These two have local addresses that may not be present on the other machine.
-6. Finally, run the command `npm run dev` to run the web app.
-7. Visit the localhost with port 3000, or `http://localhost:3000`.
+4. Run `npm install`. It will install all the dependencies.
+5. Create firebase database account, and then copy the database config in `src/scripts/firebaseConfig.ts`. Furthermore, download or copy service account key in `src/plugin/serviceAccountKey.json`.
+6. Before running on any new machine, run the `npm run resetDB` command. The reason is simple, I'm running firebase, which is global and visible to every machine, but EdgeStore and Theta blockchain are not. The filesystem that is saved on firebase is global, and the filesystem also has the contract address with the EdgeStore address that may exist on the other machine or not. These two have local addresses that may not be present on the other machine.
+7. Finally, run the command `npm run dev` to run the web app.
+8. Visit the localhost with port 3000, or `http://localhost:3000`.
 
 # System
 
