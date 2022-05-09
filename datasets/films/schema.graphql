@@ -1,0 +1,12 @@
+type Film {
+    Year: Int
+    Length: Int
+    Title: String!
+    Subject: String!
+    Actor: String!
+    Actress: String!
+    Director: String!
+    Popularity: Int
+    Awards: Boolean
+    Image: String!
+}

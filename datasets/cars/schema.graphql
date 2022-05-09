@@ -1,0 +1,11 @@
+type CarSchema {
+    Car: String!
+    MPG: Float!
+    Cylinders: Int!
+    Displacement: Float!
+    Horsepower: Float!
+    Weight: Float!
+    Acceleration: Float!
+    Model: Int!
+    Origin: String!
+}
